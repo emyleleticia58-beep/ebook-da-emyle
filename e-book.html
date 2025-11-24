@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-book Emyle | Portfólio Interativo</title>
+    <link rel="stylesheet" href="css/emy-ebook.css">
+
+    <script src="./emy.js/emy.js" defer></script>
+</head>
+
+<body>
+    <!-- NAV -->
+    <header>
+        <nav class="container">
+            <h1 class="logo">Meu E-book</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#capitulos">Minha Playlist</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao meu e-book interativo</h2>
+            <p>Uma experiência multimídia desenvolvida em HTML, CSS e JavaScript.</p>
+            <a href="#capitulos" class="btn">Explorar</a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section container">
+        <h2>Quem sou eu</h2>
+        <p>Meu nome é Emyle Letícia. Tenho 19 anos e estou vivendo uma fase cheia de descobertas. <br>
+            Estou entendendo quem eu sou, quem quero ser e qual é o meu lugar no mundo. <br>
+            Não sou alguém que nasceu sabendo exatamente qual caminho seguir. <br>
+            Eu estou me encontrando, aos poucos… e tudo bem. <br>
+            Essa é a beleza da vida: a gente cresce enquanto caminha.</p>
+    </section>
+    <!-- CAPÍTULOS -->
+    <section id="capitulos" class="section container">
+        <h2>Minha Playlist</h2>
+        <div id="capitulosContainer" class="grid-capitulos">
+        </div>
+
+     <!-- COMEÇOU -->
+    <section id="começou" class="section container">
+        <h2>Quando tudo começou</h2>
+        <p>Quando pensei no meu futuro, nunca imaginei que acabaria na área de tecnologia. <br>
+        Foi como cair de paraquedas — mas às vezes Deus coloca a gente exatamente onde precisamos estar, mesmo que ainda não entendamos o porquê.</p>
+    </section>
+
+
+    <div class="playlist-container">
+        <h2>Minha Playlist</h2>
+
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/playlist/37i9dQZF1EIZm2DablmpBD?si=oBa_70iDQmSlAx5ZBzlQWg"
+            width="100%" height="352" frameborder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+    </div>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section container">
+        <h2>Galeria</h2>
+        <div class="grid-galeria">
+            <img src="c:\Users\emyle\OneDrive\Imagens\Imagens ebook\WhatsApp Image 2025-11-20 at 09.08.41.jpeg" alt="Imagem ilustrativa"/>
+            <img src="c:\Users\emyle\OneDrive\Imagens\Imagens ebook\WhatsApp Image 2025-11-20 at 09.08.41 (1).jpg" alt="Imagem ilustrativa"/>
+            <img src="c:\Users\emyle\OneDrive\Imagens\Imagens ebook\WhatsApp Image 2025-11-20 at 09.10.10.jpeg" alt="Imagem ilustrativa"/>
+        </div> <br>
+
+        <h2>Vídeo Apresentação</h2>
+        <div class="video-flex">
+            <video controls>
+                <source src="c:\Users\emyle\Videos\Videos ebook\WhatsApp Video 2025-11-20 at 09.10.07.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo.
+            </video>
+       
+            <video controls>
+                <source src="c:\Users\emyle\Videos\Videos ebook\WhatsApp Video 2025-11-20 at 10.12.20.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+    
+
+    <!-- MULTIMÍDIA -->
+    <section id="multimidia" class="section container">
+        <h2>Seção Multimídia</h2>
+        <p>Uma apresentação complementar em vídeo.</p>
+        <iframe width="560" height="315"
+            src="https://youtu.be/_c--4KsmxFM?si=4JizwnSpgyfKwl2d"
+            title="YouTube video">
+        </iframe>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section container">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <p id="feedback" class="feedback"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 - E-book Multimídia</p>
+    </footer>
+
+    <script src="js/favoritos.js"></script>
+    <script src="js/jsonLoader.js"></script>
+    <script src="js/main.js"> </script>
+
+</body>
+</html>
+
+
